@@ -12,9 +12,11 @@ public class DomainObject {
 		super();
 	}
 
-	public DomainObject(String uuid) {
+	public DomainObject(String uuid, String name, String comment) {
 		super();
 		this.uuid = uuid;
+		this.name = name; 
+		this.comment = comment;
 	}
 	
 	public String getUuId() {
