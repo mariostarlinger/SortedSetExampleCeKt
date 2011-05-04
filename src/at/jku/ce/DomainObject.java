@@ -9,11 +9,11 @@ public class DomainObject implements Comparable<DomainObject>  {
 	/**
 	* Default constructor
 	*/
-	public DomainObject() {
+	protected DomainObject() {
 		super();
 	}
 
-	public DomainObject(String uuid, String name, String comment) {
+	protected DomainObject(String uuid, String name, String comment) {
 		super();
 		this.uuid = uuid;
 		this.name = name; 
