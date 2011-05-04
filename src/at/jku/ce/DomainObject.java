@@ -39,6 +39,7 @@ public class DomainObject implements Comparable<DomainObject>  {
 	public void setName(final String name) {
 		this.name = name;
 	}
+
 	public String toString()
 	{
 		return "DomainObject [name=" + name + ", comment=" + comment
@@ -52,7 +53,7 @@ public class DomainObject implements Comparable<DomainObject>  {
 		if (!(obj instanceof DomainObject)) 
 		{
 		
-      return false;
+      			return false;
    
 		}
 
@@ -60,7 +61,7 @@ public class DomainObject implements Comparable<DomainObject>  {
 
    		return uuid.equals(domainObj.getUuid());
 	
-}
+	}
 	
 
 
@@ -80,5 +81,6 @@ public class DomainObject implements Comparable<DomainObject>  {
 
 		return ((domObjeComp == 0) ? uuid.compareTo(domainObj.getUuid()) : omObjeComp);
 	}
+
 
 }
