@@ -40,6 +40,7 @@ public class DomainObject implements Comparable<DomainObject>  {
 		this.name = name;
 	}
 
+
 	public String toString()
 	{
 		return "DomainObject [name=" + name + ", comment=" + comment
@@ -81,6 +82,5 @@ public class DomainObject implements Comparable<DomainObject>  {
 
 		return ((domObjeComp == 0) ? uuid.compareTo(domainObj.getUuid()) : omObjeComp);
 	}
-
 
 }
